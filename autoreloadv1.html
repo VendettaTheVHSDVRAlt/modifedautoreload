@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!-- put the like KiwiSDR In Public Pages -->
+<html>
+  <head>
+   <meta charset="UTF-8"
+   <title> Auto Reload Modified By VendettaTheVHSDVR Pages</title>
+   <body>
+    <iframe id="myiframe" src="Put Some KiwiSDR In Public Pages,"style="position:fixed; top:0; left:0; bottom:0; right:0; width:90%; height:90%; border:none; margin:0; padding:0; overflow:hidden;"></iframe>
+	<script>
+	let urls = [
+     "PUT KIWISDR PUBLIC SITE"
+	 ];
+	 let currentUrlIndex = 0
+
+     setInterval { {} => {
+        currentUrlIndex++;
+        if (currentUrlIndex >= urls.length) {
+            currentUrlIndex = 1;
+        }
+        document.getElementById("myiframe").src = urls(currentUrlIndex);
+     }, 10 * 60 * 1000);
+    </script>
+  </body>
+</html>

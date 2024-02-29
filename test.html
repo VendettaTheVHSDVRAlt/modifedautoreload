@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!-- put the like KiwiSDR In Public Pages -->
+<html>
+  <head>
+   <meta charset="UTF-8"
+   <title> Auto Reload Modified By VendettaTheVHSDVR Pages</title>
+   <body>
+    <iframe id="myiframe" src="http://oh5ae.dyndns.org:8073/?f=4625usbz11&pb=0,3430, style=" style="position:fixed; top:0; left:0; bottom:0; right:0; width:90%; height:90%; border:none; margin:0; padding:0; overflow:hidden;"></iframe>
+	<script>
+	let urls = [
+     "http://oh5ae.dyndns.org:8073/?f=4625usbz11&pb=0,3430",
+     "http://rha2sdr.ddns.net:8074/?f=4625usbz11&pb=0,3430",
+     "http://rhakiwi.ddns.net:8073/?f=4625usbz11&pb=0,3430",
+     "https://nsk.swl.su/?f=4625usbz11&pb=0,3430",
+     "http://oh6hps.ddns.net:8073/?f=4625usbz11&pb=0,3430",
+     "http://kiwisdr.oh6ai.fi:8073/?f=4625usbz11&pb=0,3430"
+	 ];
+	 let currentUrlIndex = 0
+
+     setInterval { {} => {
+        currentUrlIndex++;
+        if (currentUrlIndex >= urls.length) {
+            currentUrlIndex = 1;
+        }
+        document.getElementById("myiframe").src = urls(currentUrlIndex);
+     }, 10 * 60 * 1000);
+    </script>
+  </body>
+</html>
